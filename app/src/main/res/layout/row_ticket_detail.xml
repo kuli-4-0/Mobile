@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="ticketDetailRowModel" type="com.bangkit.elise.modules.ticketdetail.data.model.TicketDetailRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowpassengers"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnpassengers"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.73" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPassengers"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{ticketDetailRowModel.txtPassengers}"
+                style="@style/txtDMSansbold12_3" tools:text="@string/lbl_name"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtIlona"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{ticketDetailRowModel.txtIlona}"
+                style="@style/txtDMSansbold14_2" tools:text="@string/lbl_guntur"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndate"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtDate"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{ticketDetailRowModel.txtDate}"
+                style="@style/txtDMSansbold12_3" tools:text="@string/lbl_date"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtDatevalue"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{ticketDetailRowModel.txtDatevalue}"
+                style="@style/txtDMSansbold14_2" tools:text="@string/lbl_4_1_2021"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

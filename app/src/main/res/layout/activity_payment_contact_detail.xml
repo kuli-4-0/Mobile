@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="paymentContactDetailVM" type="com.bangkit.elise.modules.paymentcontactdetail.data.viewmodel.PaymentContactDetailVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackmask"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageMask"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_812pxv"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_mask}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_mask"/>
+        <LinearLayout android:id="@+id/linearColumnarrowleft"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_46pxv"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearActionBarWit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_12pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtContactDetail"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_weight="0.92"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{paymentContactDetailVM.paymentContactDetailModel.txtContactDetail}"
+                        style="@style/txtDMSansmedium24" tools:text="@string/lbl_contact_detail"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnnamefield"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_85pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <Spinner
+                    android:background="@drawable/layer_list_bg_white_a700_border_gray_300_radius_12"
+                    android:id="@+id/spinnerNamefield"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearNamefield"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_3">
+                    <ImageView android:id="@+id/imageUser"
+                        android:layout_height="@dimen/_17pxh"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="@dimen/_13pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user_gray_603"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_user_gray_603"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtValue"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_18pxv"
+                        android:layout_marginEnd="@dimen/_200pxh"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{paymentContactDetailVM.paymentContactDetailModel.txtValue}"
+                        style="@style/txtDMSansbold14" tools:text="@string/lbl_full_name"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearEmailfield"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_3">
+                    <ImageView android:id="@+id/imageMail"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="@dimen/_17pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_mail"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_mail"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEmail"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginEnd="@dimen/_155pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_weight="0.86"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{paymentContactDetailVM.paymentContactDetailModel.txtEmail}"
+                        style="@style/txtDMSansbold14" tools:text="@string/lbl_abc_email_com"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearPasswordfield"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_3">
+                    <ImageView android:id="@+id/imageMappin"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_mappin_gray_604"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_mappin_gray_604"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtValueOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_18pxv"
+                        android:layout_marginEnd="@dimen/_209pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.77"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{paymentContactDetailVM.paymentContactDetailModel.txtValueOne}"
+                        style="@style/txtDMSansbold14" tools:text="@string/lbl_address"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameButtonColor"
+                    android:layout_height="@dimen/_58pxv"
+                    android:layout_marginTop="@dimen/_307pxv" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearBtnsignup"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyleindigo_A200">
+                        <FrameLayout
+                            android:id="@+id/frameStackarrowright"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_32pxv"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_22pxh"
+                            android:layout_marginStart="@dimen/_22pxh"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="@dimen/_33pxh" style="@style/groupStyleindigo_A400cornerRadius">
+                            <ImageView android:id="@+id/imageArrowright"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_13pxh"
+                                android:layout_marginBottom="@dimen/_9pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_9pxh"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_width="@dimen/_14pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtContinue"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_18pxv"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:singleLine="true"
+                        android:text="@{paymentContactDetailVM.paymentContactDetailModel.txtContinue}"
+                        android:textAllCaps="true"
+                        style="@style/txtDMSansmedium16_1" tools:text="@string/lbl_continue"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

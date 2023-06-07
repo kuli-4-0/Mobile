@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="paymentRowModel" type="com.bangkit.elise.modules.payment.data.model.PaymentRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearLabelvalue"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.87" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLabelOne1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{paymentRowModel.txtLabelOne1}"
+                style="@style/txtDMSansregular14_1" tools:text="@string/lbl_name"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtValue"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{paymentRowModel.txtValue}"
+                style="@style/txtDMSansregular14_2" tools:text="@string/lbl_bayu_chandra"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtLabelOne2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.13" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{paymentRowModel.txtLabelOne2}"
+            style="@style/txtDMSansregular12" tools:text="@string/lbl_change"/>
+    </LinearLayout>
+</layout>

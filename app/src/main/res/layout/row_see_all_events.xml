@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="seeAllEventsRowModel" type="com.bangkit.elise.modules.seeallevents.data.model.SeeAllEventsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <FrameLayout android:id="@+id/frameWomensLeaders"
+            android:layout_height="@dimen/_92pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_79pxh" style="@style/groupStyleorange_200cornerRadius">
+            <ImageView android:id="@+id/imageImageEighty"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_92pxh"
+                android:layout_width="@dimen/_79pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_10pxh}"
+                imageRes="@{@drawable/img_image80_92x79}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image80_92x79"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearEventdesc3"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_48pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_weight="0.68" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{seeAllEventsRowModel.txtTimeOne}"
+                android:textAllCaps="true"
+                style="@style/txtDMSansmedium12" tools:text="@string/msg_1st_may_sat"/>
+            <TextView android:id="@+id/txtImGoingtoShOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:text="@{seeAllEventsRowModel.txtImGoingtoShOne}"
+                style="@style/txtDMSansmedium18_2" tools:text="@string/msg_women_s_leaders"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

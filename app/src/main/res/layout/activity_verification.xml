@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="verificationVM" type="com.bangkit.elise.modules.verification.data.viewmodel.VerificationVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearVerification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_height="@dimen/_12pxh"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_57pxv"
+            android:layout_width="@dimen/_15pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        <LinearLayout android:id="@+id/linearColumnwelcomegetsta"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWelcomeGetsta"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{verificationVM.verificationModel.txtWelcomeGetsta}"
+                style="@style/txtDMSansmedium24" tools:text="@string/lbl_verification"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtWevesendyou"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_10pxh"
+                android:text="@{verificationVM.verificationModel.txtWevesendyou}"
+                style="@style/txtDMSansbold15" tools:text="@string/msg_we_ve_send_you"/>
+            <LinearLayout android:id="@+id/linearRowverifnumberone"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_indigo_a200_radius_12"
+                    android:id="@+id/btnVerifnumberOne"
+                    android:layout_height="@dimen/_55pxh"
+                    android:layout_width="@dimen/_55pxh"
+                    android:paddingHorizontal="@dimen/_20pxh"
+                    android:paddingVertical="@dimen/_20pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_verifnumber1" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_indigo_a200_radius_12"
+                    android:id="@+id/btnVerifnumberTwo"
+                    android:layout_height="@dimen/_55pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_width="@dimen/_55pxh"
+                    android:paddingHorizontal="@dimen/_20pxh"
+                    android:paddingVertical="@dimen/_20pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_verifnumber1" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_indigo_a200_radius_12"
+                    android:id="@+id/btnVerifnumberThree"
+                    android:layout_height="@dimen/_55pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_width="@dimen/_55pxh"
+                    android:paddingHorizontal="@dimen/_20pxh"
+                    android:paddingVertical="@dimen/_20pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_verifnumber1" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_indigo_a200_radius_12"
+                    android:id="@+id/btnVerifnumberFour"
+                    android:layout_height="@dimen/_55pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_width="@dimen/_55pxh"
+                    android:paddingHorizontal="@dimen/_20pxh"
+                    android:paddingVertical="@dimen/_20pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_verifnumber1" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameButtonColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_58pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_40pxv" android:layout_width="@dimen/_271pxh">
+                <LinearLayout android:id="@+id/linearBtncontinue"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleindigo_A200cornerRadius">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_indigo_a400_radius_15"
+                        android:id="@+id/btnArrowright"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginHorizontal="@dimen/_14pxh"
+                        android:layout_marginVertical="@dimen/_14pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrowright" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtContinue"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:singleLine="true"
+                    android:text="@{verificationVM.verificationModel.txtContinue}"
+                    android:textAllCaps="true"
+                    style="@style/txtDMSansmedium16_1" tools:text="@string/lbl_continue"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{verificationVM.verificationModel.txtLanguage}"
+                style="@style/txtDMSansbold15" tools:text="@string/msg_re_send_code_in"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

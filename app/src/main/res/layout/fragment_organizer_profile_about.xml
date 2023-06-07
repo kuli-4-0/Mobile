@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="organizerProfileAboutVM" type="com.bangkit.elise.modules.organizerprofileabout.data.viewmodel.OrganizerProfileAboutVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <TextView android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:text="@{organizerProfileAboutVM.organizerProfileAboutModel.txtDescription}"
+            style="@style/txtDMSansbold16_1" tools:text="@string/msg_enjoy_your_favo"/>
+    </ScrollView>
+</layout>

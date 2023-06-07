@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.bangkit.elise" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.bangkit.elise.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.bangkit.elise.modules.ticketdetail.ui.TicketDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.eventdetailsaudition.ui.EventDetailsAuditionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.editlocation.ui.EditLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.bangkit.elise.modules.signin.ui.SignInActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bangkit.elise.modules.paymentcontactdetail.ui.PaymentContactDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.paymentguestdetails.ui.PaymentGuestDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.musicianfilter.ui.MusicianFilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.chat.ui.ChatActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.organizerprofilereview.ui.OrganizerProfileReviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.musicianprofileperform.ui.MusicianProfilePerformActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.verification.ui.VerificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.eventdetailslive.ui.EventDetailsLiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bangkit.elise.modules.payment.ui.PaymentActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
