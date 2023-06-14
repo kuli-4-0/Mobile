@@ -26,7 +26,7 @@
                     android:layout_gravity="start"
                     android:layout_height="@dimen/_131pxv" android:layout_width="@dimen/_218pxh">
                     <ImageView
-                        android:id="@+id/imageImageEightyFour"
+                        android:id="@+id/ivPoster"
                         android:layout_gravity="start"
                         android:layout_height="@dimen/_131pxh"
                         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                         android:orientation="vertical" style="@style/groupStylewhite_A700_b2cornerRadius">
                         <TextView
                             android:gravity="center_horizontal"
-                            android:id="@+id/txtArmanrokni"
+                            android:id="@+id/tvDate"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="@dimen/_7pxv"
                             android:layout_marginEnd="@dimen/_9pxh"
@@ -54,7 +54,7 @@
                             android:layout_marginTop="@dimen/_4pxv"
                             android:layout_width="match_parent"
                             android:lineSpacingExtra="@dimen/_1pxh"
-                            android:text="@{navigationBarVM.navigationBarModel.txtArmanrokni}"
+                            android:text="@string/lbl_10_june"
                             android:textAllCaps="true"
                             style="@style/txtDMSansmedium14" tools:text="@string/lbl_10_june"/>
                     </LinearLayout>
@@ -62,14 +62,14 @@
             </FrameLayout>
             <TextView android:ellipsize="end"
                 android:gravity="center_horizontal"
-                android:id="@+id/txtImGoingtoSh"
+                android:id="@+id/tvName"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_16pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_13pxv"
                 android:layout_width="match_parent"
                 android:singleLine="true"
-                android:text="@{navigationBarVM.navigationBarModel.txtImGoingtoSh}"
+                android:text="@string/msg_international_b"
                 style="@style/txtDMSansmedium18_1" tools:text="@string/msg_international_b"/>
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearRowmappin"
@@ -89,14 +89,14 @@
                     android:src="@drawable/img_mappin"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_mappin"/>
                 <TextView android:ellipsize="end"
-                    android:id="@+id/txtLanguage"
+                    android:id="@+id/tvLoc"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_7pxh"
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.93"
                     android:layout_width="0dp"
                     android:singleLine="true"
-                    android:text="@{navigationBarVM.navigationBarModel.txtLanguage}"
+                    android:text="@string/msg_36_guild_street"
                     style="@style/txtDMSansbold13" tools:text="@string/msg_36_guild_street"/>
             </LinearLayout>
         </LinearLayout>
